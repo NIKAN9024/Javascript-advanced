@@ -15,6 +15,9 @@ const beschrijvingen = namen.map((naam, index) =>
     `${naam} (${leeftijden[index]} jaar) woont in ${steden[index]}.`
 );
 
+const namen2 = ['Jan', 'Marie', 'Piet', 'Lisa'];
+
+
 
 /* jouw code hier - gebruik map() en template literals */
 
