@@ -2,7 +2,8 @@
 
 ### Wat is Local Storage?
 
-Local Storage is een manier om data op te slaan in de browser van de gebruiker. De data blijft bewaard, zelfs als de gebruiker de browser sluit en later terugkomt.
+Local Storage is een manier om data op te slaan in de browser van de gebruiker. 
+De data blijft bewaard, zelfs als de gebruiker de browser sluit en later terugkomt.
 
 **Belangrijke eigenschappen:**
 
