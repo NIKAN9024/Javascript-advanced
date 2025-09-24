@@ -1,4 +1,45 @@
 // Stap 1
+console.log('opdracht 2.3: persoon object');
+
+
+let person = {
+    name: "Omar",
+    age: "19",
+    birthDate: "may 26th 2006",
+    gender: "male",
+    alive: true,
+    hobbys: ["fitness", "IT", "gaming"],
+    
+
+
+veranderName: function(newName){
+    this.name = newName;
+},
+veranderAlive: function(newAlive){
+    this.alive = newAlive;
+},
+toevoegHobby: function(newAlive){
+    this.hobbys.push(newAlive);
+}
+};
+
+person.veranderName("Ali");
+person.veranderAlive("false");
+person.toevoegHobby("Boxing");
+
+
+document.querySelector('.output').innerHTML = `
+<h2>${person.name}</h2>
+<p>Age: ${person.age}</p>
+<p>Birth Date: ${person.birthDate}</p>
+<p>Gender: ${person.gender}</p>
+<p>Alive: ${person.alive}</p>
+<p>Hobbys: ${person.hobbys}</p>
+`
+;
+
+
+
 
 // Maak een persoon object waar je allemaal eigenschappen van een persoon in kunt opslaan en tonen op het scherm.
 
