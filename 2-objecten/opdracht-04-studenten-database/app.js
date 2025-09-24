@@ -41,6 +41,14 @@ const students = [
   },
 ];
 
+console.log('opdracht 2.4: studenten database');
+
+
+
+
+
+
+
 // function toonAlleStudenten() {
 //   // 📝 WAT MOET JE DOEN:
 //   // 1. Loop door de hele 'students' array
@@ -57,7 +65,36 @@ const students = [
 //   // </article>
 // }
 
+const studentenLijst = document.getElementById('studenten-lijst');
+
+
+function toonAlleStudenten() {
+  studentenLijst.innerHTML = students
+  .map((genereerStudentHTML))
+.join('');
+}
+
+function genereerStudentHTML(student) {
+  return `
+  <article class="${student.actief ? 'actief' : 'inactief'}">
+      <strong>${student.naam}</strong> (${student.leeftijd} jaar)<br>
+       ${student.studie}<br>
+       Cijfer: ${student.cijfer} | Status: ${student.actief ? ' Actief' : ' Inactief'}
+  </article>
+  `;
+}
+
+
 function toonActieveStudenten() {
+
+  const toonActieveStudenten = students.filter((student) => student.actief);
+  console.log(toonActieveStudenten);
+  studentenLijst.innerHTML = toonActieveStudenten
+  .map((genereerStudentHTML))
+.join('');
+
+
+
   // 📝 WAT MOET JE DOEN:
   // 1. Filter de students array op studenten waar actief === true
   // 2. Toon alleen die gefilterde studenten (gebruik dezelfde HTML als hierboven)
@@ -66,6 +103,15 @@ function toonActieveStudenten() {
 }
 
 function toonTopStudenten() {
+
+
+
+  const toonTopStudenten = students.filter((student) => student.cijfer >= 8.0);
+  console.log(toonTopStudenten);
+  studentenLijst.innerHTML = toonTopStudenten
+  .map((genereerStudentHTML))
+.join('');
+
   // 📝 WAT MOET JE DOEN:
   // 1. Filter de students array op studenten met cijfer >= 8.0
   // 2. Toon alleen die gefilterde studenten
@@ -74,4 +120,7 @@ function toonTopStudenten() {
 }
 
 // 🚀 START DE APPLICATIE - roep deze aan als de pagina laadt
+toonAlleStudenten();
+toonActieveStudenten();
+toonTopStudenten(); 
 toonAlleStudenten();
