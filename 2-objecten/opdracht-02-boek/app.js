@@ -1,4 +1,26 @@
 // Maak een boek object waar je allemaal gegevens van een boek in kunt opslaan en tonen op het scherm.
+console.log('opdracht 2.2: objecten');
+
+let book = {
+    title: "The Green Road",
+    author: "Anne Enright",
+    publisher: "W. W. Norton & Company",
+    year: 2015,
+    sold: 500000,
+    price: "15,99"
+};
+
+document.querySelector('.output').innerHTML = `
+<h2>${book.title}</h2>
+<p>Autheur: ${book.author}</p>
+<p>publisher: ${book.publisher}</p>
+<p>year: ${book.year}</p>
+<p>Verkocht: ${book.sold}</p>
+<p>Price: ${book.price}</p>
+`
+;
+
+
 
 // Het object moet de volgende properties bevatten:
 
