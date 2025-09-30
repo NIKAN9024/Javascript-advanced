@@ -1,0 +1,38 @@
+   
+[
+    
+    {
+        "name": "Bertie Yates",
+        "age": 31,
+        "image": "./foto's/bertieyates.png"
+
+    },
+
+    {
+        "name": "Hester Hogan",
+        "age": 36,
+        "image": "./foto's/hesterhogan.png"
+    },
+
+    {
+        "name": "Larry Little",
+        "age": 36,
+        "image": "./foto's/larrylittle.png"
+    },
+
+    {
+        "name": "Sean Walsh:",
+        "age": 34,
+        "image": "./foto's/seanwalsh.png"
+    },
+
+    {
+        "name": "Lola Gardner",
+        "age": 32,
+        "image": "./foto's/lolagardner.png"
+    }
+]
+
+
+
+
