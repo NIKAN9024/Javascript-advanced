@@ -20,9 +20,9 @@ fetch('./birthday.json')
     `;
         
         }
-document.querySelector(".onclick").addEventListener("click", () => {
-  output.innerHTML = "";
-  document.querySelector(".title").textContent = "0 birthdays today";
+   document.querySelector(".onclick").addEventListener("click", () => {
+   output.innerHTML = "";
+   document.querySelector(".title").textContent = "0 birthdays today";
 });
 });
 
